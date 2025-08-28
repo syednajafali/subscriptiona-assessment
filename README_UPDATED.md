@@ -22,9 +22,6 @@
   - `subscription.cancel` — allows cancelling any subscription.
 - Owner checks enforced in `view` and `cancel` actions.
 
-### Idempotent Migrations
-- **m230201_000001_subscription_schema_hardening**: adds missing columns, indexes, foreign keys safely (re-runnable).
-- **m230201_000002_rbac_setup**: seeds RBAC permissions/roles idempotently.
 
 ### Performance (N+1 Removed)
 - Controller uses `with(['user','plan'])` to eager-load relations.
